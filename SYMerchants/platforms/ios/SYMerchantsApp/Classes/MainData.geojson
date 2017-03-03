@@ -1,0 +1,54 @@
+{
+    "titleBarConfig" : {
+        "url" : "main.html?pg=merchant;act=home",
+        "title" : "店铺",
+        "leftBtns" : [],
+        "rightBtns" : [ {
+                     "id" : "13",
+                     "ico" : "btn_set",
+                     "type" : "button"
+                     } ],
+        "bottomBtns" : [ {
+                      "id" : "31",
+                      "ico" : "btn_home",
+                      "name" : "店铺"
+                      }, {
+                      "id" : "32",
+                      "ico" : "btn_chart",
+                      "name" : "订单"
+                      }, {
+                      "id" : "33",
+                      "ico" : "btn_grid",
+                      "name" : "商品"
+                      }]
+    },
+    "bottomBarConfig" : [ {
+                       "url" : "main.html?pg=merchant;act=home",
+                       "title" : "店铺",
+                       "leftBtn" : [],
+                       "rightBtn" : [ {
+                                    "id" : "13",
+                                    "ico" : "btn_set",
+                                    "type" : "button"
+                                    } ]
+                       }, {
+                       "url" : "main.html?pg=order;act=list;result_tag=shipping",
+                       "title" : "订单",
+                       "leftBtn" : [],
+                       "rightBtn" : []
+                       },
+                        {
+                       "url" : "main.html?pg=product;act=list;result_tag=onSaleTag",
+                       "title" : "商品",
+                       "leftBtn" : [ {
+                                   "id" : "11",
+                                   "ico" : "btn_new",
+                                    "type" : "button"
+                                   } ],
+                       "rightBtn" : [ {
+                                    "id" : "13",
+                                    "name" : "设置",
+                                    "type" : "button"
+                                    } ]
+                       } ]
+}

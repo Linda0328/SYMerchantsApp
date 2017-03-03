@@ -1,0 +1,19 @@
+{
+    
+    "versionContent" : "更新内容：1.修正部分闪退的问题。2.商家APP内测结束，正式更新到生产环境。",
+    
+    "isForcedUpdate" : "1",
+    
+    "androidVersion" : "5",
+    
+    "androidVersionName" : "1.0.1",
+    
+    "androidInstall" : "http://sj.shengyuan.cn/download/symerchant-android-101.apk",
+    
+    "pageVersion" : "12",
+    
+    "iosVersion" : "1",
+    
+    "iosVersionName" : "0.0.1"
+    
+}

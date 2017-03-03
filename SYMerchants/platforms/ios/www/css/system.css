@@ -1,0 +1,270 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
+	form, fieldset, legend, input, button, textarea, p, blockquote, th, td,
+	section, article, aside, header, footer, nav, dialog, figure, hgroup {
+	margin: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	font-size: 100%;
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset, img {
+	border: 0;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+
+ul, ol, li {
+	list-style: none
+}
+
+em, i {
+	font-style: normal
+}
+
+del {
+	text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+img {
+	border: 0;
+	width: 100%;
+	display: block;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input:focus, a:focus {
+	outline: none;
+}
+
+a {
+	color: #353d44;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:active {
+	opacity: .7;
+}
+
+* {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	min-width: 320px;
+	height: 100%;
+	line-height: 1.5;
+	color: #444;
+	font-family: 'microsoft yahei', Arial, Helvetica, STHeiTi, sans-serif;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+}
+/* 
+  rem方式，750px 为高保真基准，原高保真大小除以基数50，即 10px/50 = 0.2rem，以此类推,字体还是 px
+ */
+html {
+	font-size: 50px;
+}
+
+body {
+	font-size: 24px;
+}
+
+@media screen and (min-width:320px) {
+	html {
+		font-size: 21.333333333333332px;
+	}
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width:360px) {
+	html {
+		font-size: 24px;
+	}
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width:375px) {
+	html {
+		font-size: 25px;
+	}
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width:384px) {
+	html {
+		font-size: 25.6px;
+	}
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width:400px) {
+	html {
+		font-size: 26.666666666666668px;
+	}
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width:414px) {
+	html {
+		font-size: 27.6px;
+	}
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width:424px) {
+	html {
+		font-size: 28.266666666666667px;
+	}
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width:480px) {
+	html {
+		font-size: 32px;
+	}
+	body {
+		font-size: 15.36px;
+	}
+}
+
+@media screen and (min-width:540px) {
+	html {
+		font-size: 36px;
+	}
+	body {
+		font-size: 17.28px;
+	}
+}
+
+@media screen and (min-width:720px) {
+	html {
+		font-size: 48px;
+	}
+	body {
+		font-size: 23.04px;
+	}
+}
+
+@media screen and (min-width:750px) {
+	html {
+		font-size: 50px;
+	}
+	body {
+		font-size: 24px;
+	}
+}
+
+/*无网络情况下*/
+.no-network {
+	background: #fef2da;
+	color: #ff7146;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	padding-left: 0.4rem;
+}
+
+.network-icon {
+	display: block;
+	height: 1.5rem;
+	width: 0.88rem;
+	background-image: url(../img/warning.png);
+	background-size: 0.64rem;
+	float: left;
+}
+
+.icon {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*错误提示*/
+.error {
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.error-img {
+	margin: 0 auto;
+	text-align: center;
+	width: 30%;
+}
+
+.error-txt {
+	width: 100%;
+	margin: 1.2rem auto 0;
+	text-align: center;
+	color: #333;
+}
+
+.error-txt-s {
+	display: block;
+	font-size: 0.68rem;
+}
+
+/*加载中*/
+.main-ing {
+	background-image: url(../img/loading.gif);
+	width: 4.5rem;
+	height: 1.5rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
