@@ -459,8 +459,6 @@
 
 - (void)createGapView
 {
-//    CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-113);
-//    CGRect webViewBounds = rect;
     CGRect webViewBounds = self.view.bounds;
     webViewBounds.origin = self.view.bounds.origin;
     UIView* view = [self newCordovaViewWithFrame:webViewBounds];

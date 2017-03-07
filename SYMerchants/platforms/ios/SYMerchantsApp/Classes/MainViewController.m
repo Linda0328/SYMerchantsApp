@@ -114,11 +114,18 @@
 {
     [super viewDidLoad];
     self.webView.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.hidden = NO;
-    self.navigationController.navigationBar.translucent = NO;
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.automaticallyAdjustsScrollViewInsets = NO;
+   
+//    self.navigationController.navigationBar.hidden = NO;
+//    self.navigationController.navigationBar.translucent = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+//    CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64);
+//    UIView* view = [self newCordovaViewWithFrame:rect];
+//    view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+//    [self.view addSubview:view];
+//    [self.view sendSubviewToBack:view];
     __weak __typeof(self)weakSelf = self;
+    
     MJRefreshGifHeader *gifHeader = [MJRefreshGifHeader headerWithRefreshingBlock:^{
         __strong __typeof(weakSelf)strongSelf = weakSelf;
         [strongSelf LoadURL:strongSelf.startPage];

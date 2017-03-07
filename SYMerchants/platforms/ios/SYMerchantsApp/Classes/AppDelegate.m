@@ -50,7 +50,7 @@
     CGRect screenBounds = [[UIScreen mainScreen] bounds];    
     self.window = [[UIWindow alloc] initWithFrame:screenBounds];
     self.window.autoresizesSubviews = YES;
-//    [self versionUpdate];
+    [self versionUpdate];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     __weak __typeof(self)weakSelf = self;
     self.hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
