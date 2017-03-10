@@ -53,7 +53,7 @@
         MainViewController *pushM = [[MainViewController alloc]init];
         pushM.startPage = navModel.url;
         viewC.CurrentChildVC = pushM;
-        pushM.view.frame = viewC.view.bounds;
+        pushM.view.frame = rect;
         [viewC addChildViewController:pushM];
         [viewC.view addSubview:pushM.view];
         [pushM didMoveToParentViewController:viewC];
