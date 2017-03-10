@@ -84,23 +84,23 @@
     // View defaults to full size.  If you want to customize the view's size, or its subviews (e.g. webView),
     // you can do so here.
     [super viewWillAppear:animated];
-    if([[[UIDevice currentDevice]systemVersion ] floatValue]>=7)
-    {
-//        CGRect viewBounds = [self.view frame];
-//        CGRect webViewBounds= [self.webView frame];
-//        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        CGFloat height = [UIScreen mainScreen].bounds.size.height;
-        CGRect rect = [UIScreen mainScreen].bounds;
-        
-        if (_isRoot) {
-            rect.size.height = height -113;
-        }
-        if (!_isRoot) {
-            rect.size.height = height - 64;
-        }
-        self.view.frame = rect;
-        self.webView.frame = rect;
-    }
+//    if([[[UIDevice currentDevice]systemVersion ] floatValue]>=7)
+//    {
+////        CGRect viewBounds = [self.view frame];
+////        CGRect webViewBounds= [self.webView frame];
+////        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+//        CGFloat height = [UIScreen mainScreen].bounds.size.height;
+//        CGRect rect = [UIScreen mainScreen].bounds;
+//        
+//        if (_isRoot) {
+//            rect.size.height = height -113;
+//        }
+//        if (!_isRoot) {
+//            rect.size.height = height - 64;
+//        }
+//        self.view.frame = rect;
+//        self.webView.frame = rect;
+//    }
     
     if ([SYGlobleConst judgeNSString:[SYShareVersionInfo sharedVersion].scanResult]) {
         CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[SYShareVersionInfo sharedVersion].scanResult];
@@ -116,8 +116,9 @@
     self.webView.backgroundColor = [UIColor whiteColor];
    
 //    self.navigationController.navigationBar.hidden = NO;
-//    self.navigationController.navigationBar.translucent = NO;
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
+     self.navigationController.navigationBar.translucent = NO;
+     self.edgesForExtendedLayout = UIRectEdgeNone;
+     self.extendedLayoutIncludesOpaqueBars = YES;
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 //    CGRect rect = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64);
 //    UIView* view = [self newCordovaViewWithFrame:rect];
