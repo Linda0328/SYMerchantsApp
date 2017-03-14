@@ -180,6 +180,23 @@
         self.hidesBottomBarWhenPushed = YES;
     }
 }
+-(void)viewWillLayoutSubviews{
+    if([[[UIDevice currentDevice]systemVersion ] floatValue]>=7)
+    {
+        CGFloat height = [UIScreen mainScreen].bounds.size.height;
+        CGRect rect = [UIScreen mainScreen].bounds;
+
+        if (_isRoot) {
+            rect.size.height = height -113;
+        }
+        if (!_isRoot) {
+            rect.size.height = height - 64;
+        }
+        self.view.frame = rect;
+        self.webView.frame = rect;
+    }
+
+}
 -(void)onloadNotification:(NSNotification*)notify{
     NSLog(@"-------开始等加载啦-----");
 }
