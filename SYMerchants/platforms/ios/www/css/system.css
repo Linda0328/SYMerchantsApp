@@ -96,11 +96,11 @@ body {
 /* 
   rem方式，750px 为高保真基准，原高保真大小除以基数50，即 10px/50 = 0.2rem，以此类推,字体还是 px
  */
-.pro-items-btn{margin-bottom:64px}
-.jt-btn{margin-bottom:64px}
-html {
-    font-size: 50px;padding:0 0 64px 0;
-}
+/*.pro-items-btn{margin-bottom:64px}*/
+/*.jt-btn{margin-bottom:64px}*/
+/*html {*/
+/*    font-size: 50px;padding:0 0 64px 0;*/
+/*}*/
 
 body {
 	font-size: 24px;
